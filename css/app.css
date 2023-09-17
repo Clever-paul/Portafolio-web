@@ -77,6 +77,8 @@ p{
     font-size: 4rem ;
     text-align: center;
     font-weight: 700;
+    margin: 0;
+    padding: 2.5rem 0;
 }
 /* Color icons  */
 .fa-html5{
@@ -91,10 +93,15 @@ p{
 .fa-github{
     color: #ffffff;
 }
-/* header */
-.header{
-    margin-bottom: 5rem;
+
+.fa-sass{
+    color: #CF6C9C;
 }
+.fa-react{
+    color: #1BA1CC;
+}
+/* header */
+
 .header-logo{
     height: 7rem;
     width: auto;
@@ -188,12 +195,8 @@ p{
 .about{
     background-color: rgba(23, 24, 42, 0.4);
     border-radius: 1.5rem;
-    padding: 2rem 0;
 }
-.about-heading h2{
-    margin: 0;
 
-}
 .about-contenido{
     display: grid;
 }
@@ -209,7 +212,6 @@ p{
     height: auto;
     border-radius: 50%;
     border: .8rem var(--primario) solid;
-    text-align: end;
 }
 
 .about-imagen img{
@@ -226,7 +228,9 @@ p{
 }
 
 /* proyectos */
-
+.proyectos{
+    padding: 2.5rem 0;
+}
 
 .proyectos-grid{
     display: grid;
@@ -274,6 +278,7 @@ p{
     font-size: 3rem;
 }
 
+
 .proyecto-view{
     display: flex;
     gap: 1rem;
@@ -286,8 +291,38 @@ p{
     background-color: #148582;
     padding: 1rem 0;
     color: var(--colorTexto);
-    
+    font-family: var(--fuenteDiseño);
 }
 .proyecto-view i{
     padding-right: 1rem;
+}
+/* habilidades */
+
+.habilidades{
+    background-color: rgba(23, 24, 42, 0.5);
+    border-radius: 1.7rem;
+}
+.habilidades-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media (min-width: 768px) { 
+    .habilidades-grid{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+@media (min-width: 1200px) { 
+    .habilidades-grid{
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+.habilidad{
+    text-align: center;
+}
+
+.habilidad i{
+    font-size: 6rem;
+}
+.habilidad p{
+    font-family: var(--fuenteDiseño);
 }
