@@ -19,3 +19,9 @@
 
 // maquinaEscribir();
 // setTimeout(maquinaEscribir, 200);
+
+
+
+//obtener anio
+const anio = document.querySelector('.anio');
+anio.textContent = new Date().getFullYear();

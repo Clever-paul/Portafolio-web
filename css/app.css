@@ -100,8 +100,13 @@ p{
 .fa-react{
     color: #1BA1CC;
 }
+.fa-square-js{
+    color: #F7E025;
+}
 /* header */
-
+.header{
+    margin-bottom: 5rem;
+}
 .header-logo{
     height: 7rem;
     width: auto;
@@ -195,6 +200,7 @@ p{
 .about{
     background-color: rgba(23, 24, 42, 0.4);
     border-radius: 1.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .about-contenido{
@@ -325,4 +331,71 @@ p{
 }
 .habilidad p{
     font-family: var(--fuenteDiseño);
+}
+/* conatactame  */
+
+.contacto-contenido{
+    background-color: rgba(23, 24, 42, 0.7);
+    border-radius: 1.7rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+/* aqui van las pruebas */
+.contacto-icono {
+    position: relative;
+    display: inline-block;
+}
+
+.texto-oculto {
+    position: absolute;
+    bottom: -2rem; /* Ajusta la posición vertical del texto */
+    left: 50%; /* Centra horizontalmente el texto */
+    transform: translateX(-50%); /* Centra el texto horizontalmente */
+    opacity: 0; /* El texto estará oculto inicialmente */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff; /* Color del texto */
+    padding: 4px 8px; /* Espaciado interno del texto */
+    border-radius: 4px; /* Bordes redondeados del texto */
+    transition: opacity 0.3s ease-in-out; /* Transición suave de opacidad */
+}
+.contacto-icono:hover .texto-oculto {
+    opacity: 1; /* Muestra el texto al hacer hover en el icono */
+}
+
+
+
+
+@media (min-width: 768px) { 
+    .contacto-contenido{
+        width: 30%;
+        margin: 0 auto;
+    }
+}
+.contacto-contenido i{
+    font-size: 4rem;
+}
+.contacto-circulo{
+    width: 5rem;
+    height: 5rem;
+    background-color: #148582;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* footer */
+
+.footer{
+    margin-top: 5rem;
+    background-color: var(--primario);
+    height: 6rem;
+}
+.footer-flex{
+
+    display: flex;
+    justify-content: center;
+}
+.copyright{
+    padding-left: 1rem;
 }
