@@ -218,6 +218,7 @@ p{
     height: auto;
     border-radius: 50%;
     border: .8rem var(--primario) solid;
+    overflow: hidden;
 }
 
 .about-imagen img{
